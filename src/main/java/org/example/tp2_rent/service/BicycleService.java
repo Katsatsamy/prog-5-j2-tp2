@@ -1,6 +1,7 @@
 package org.example.tp2_rent.service;
 
 import org.example.tp2_rent.Manager.BicycleManger;
+import org.example.tp2_rent.entity.Association;
 import org.example.tp2_rent.entity.Bicycle;
 import org.springframework.stereotype.Service;
 
@@ -17,4 +18,5 @@ public class BicycleService {
     public Bicycle getBicycleById(String id) {
         return bicycleManger.getById(id);
     }
+
 }
