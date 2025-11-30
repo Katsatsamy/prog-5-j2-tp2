@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+        "-//Checkstyle//DTD Checkstyle Configuration 1.2//EN"
+        "https://checkstyle.org/dtds/configuration_1_2.dtd">
+
+<module name="Checker">
+
+    <module name="TreeWalker">
+
+        <!-- Class — PascalCase -->
+        <module name="TypeName">
+            <property name="format" value="^[A-Z][a-z0-9A-Z]*[a-z][a-zA-Z0-9]*$"/>
+        </module>
+
+        <!-- Variable — camelCase -->
+        <module name="LocalVariableName">
+            <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
+        </module>
+
+        <module name="MemberName">
+            <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
+        </module>
+
+        <!-- Méthode — camelCase -->
+        <module name="MethodName">
+            <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
+        </module>
+
+    </module>
+
+</module>
